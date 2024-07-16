@@ -1,0 +1,1 @@
+Task 0. Interface in Typescript
