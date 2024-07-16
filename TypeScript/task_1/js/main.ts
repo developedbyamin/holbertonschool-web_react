@@ -11,6 +11,10 @@ interface Directors extends Teacher{
     numberOfReports: number,
 }
 
+interface printTeacherFunction{
+    (firstName: string, lastName: string): string;
+}
+
 const teacher: Teacher = {
     firstName: 'Amin',
     lastName: 'Aghayev',
@@ -28,5 +32,11 @@ const directors1: Directors = {
     numberOfReports: 69,
 }
 
+const printTeacher: printTeacherFunction = (firstName, lastName) => {
+    const initial = firstName.charAt(0).toUpperCase();
+    return `${initial}. ${lastName}`;
+}
+
+console.log(printTeacher(teacher.firstName,teacher.lastName));
 console.log(teacher);
 console.log(directors1);
