@@ -1,19 +1,11 @@
-/* task_2/css/main.css */
+#count {
+	display: inline;
+	font-weight: bold;
+  }
 
-.button {
-    position: relative;
-}
-  
-.counter {
-    position: absolute;
-    top: 0;
-    right: 0;
-    font-weight: bold;
-}
-
-#logo {
-    width: 200px;
-    height: 200px;
-    background-image: url('../assets/holberton-logo.jpg');
-    background-size: cover;
-}
+  #logo {
+	width: 200px;
+	height: 200px;
+	background: url('../assets/holberton-logo.jpg');
+	background-size: 200px 200px;
+  }
